@@ -1,0 +1,15 @@
+var/cache/**/*
+var/session/**/*
+var/session/*
+var/log/*
+var/locks/*
+var/report/*
+var/export/*
+media/catalog/product/cache/**/*
+media/css/*
+media/js/*
+media/css_secure/*
+media/js_secure/*
+app/etc/local.xml
+app/etc/config.xml
+app/etc/*.xml
