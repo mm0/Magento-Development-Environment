@@ -9,7 +9,7 @@ Vagrant::Config.run do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "centos64"
 	config.vm.network :hostonly, "3.3.3.3"
-	config.vm.share_folder "chef-data","/var/www/git/store/","./" , :extra => 'uid=48,gid=48,dmode=777,fmode=777' 
+	config.vm.share_folder "chef-data","/var/www/git/store/","./" , :mount_options=> ['uid=48,gid=48,dmode=777,fmode=777']
 #	config.vm.share_folder "chef-data","/vagrant/","./" , :extra => 'uid=48,gid=48,dmode=777,fmode=777' 
 #	config.vm.share_folder "chef-cache",
 #				"/var/chef/cache",
